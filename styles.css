@@ -1,0 +1,23 @@
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+header {
+  background-color: white;
+  grid-column: 2;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+main {
+  background-color: #E6EAF0;
+}
+
+.sidebar {
+  grid-column: 1 ;
+  grid-row: 1 / 6;
+  background-color: blue;
+}
