@@ -10,6 +10,7 @@
 
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
 }
 
 .container {
@@ -24,6 +25,8 @@ header {
   grid-column: 2;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   z-index: 2;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 main {
@@ -53,8 +56,56 @@ main {
   grid-row: span 2;
 }
 
-img {
+.nav-rows img {
   height: 25px;
   align-self: center;
   filter: invert(1);
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 20px 30px;
+}
+
+.top img {
+  height: 25px;
+  align-self: center;
+}
+
+.search-section {
+  display: flex;
+  align-self: center;
+  height: 30px;
+}
+
+.search {
+  margin: 0 10px;
+  flex-grow: 1;
+}
+
+input {
+  background-color: var(--main-gray);
+  border-radius: 18px;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: right;
+  margin: 0 50px;
+}
+
+.profile-section img,
+.profile-section h3 {
+  padding: 0 18px;
+}
+
+img.profile-picture {
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+}
+
+.profile-picture {
+  border-radius: 50%;
 }
