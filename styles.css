@@ -31,6 +31,8 @@ header {
 
 main {
   background-color: var(--main-gray);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
 .sidebar {
@@ -109,7 +111,7 @@ header .top .profile-section {
 
 header .top .profile-section img,
 header .top .profile-section h3 {
-  padding: 0 18px;
+  padding: 0 12px;
   align-self: center;
 }
 
@@ -136,9 +138,6 @@ img.main-profile-picture {
   height: 70px;
   width: 70px;
   margin-right: 20px;
-}
-
-.hello {
 }
 
 h2,
@@ -170,3 +169,120 @@ header .bottom .buttons {
   background-color: var(--main-orange);
   cursor: pointer;
 }
+
+.projects,
+.announcements-trending {
+  margin: 25px 20px;
+}
+
+.announcements-trending {
+  margin-left: 5px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 30px;
+}
+
+.cards {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  border-left: 10px solid var(--main-orange);
+  min-height: 150px;
+  display: grid;
+}
+
+
+.project .card h3 {
+  align-self: center;
+  margin-bottom: 5px;
+}
+
+.cards p {
+  text-wrap: wrap;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+.cards .icon-section {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+}
+
+.icon-section img {
+  margin: 0 10px;
+  max-height: 25px;
+}
+
+.announcements-trending {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.announcement-section,
+.trending-section {
+}
+
+.announcements-container,
+.trending-container {
+  max-height: 350px;
+  max-width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 25px;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.announcements-container>:last-child {
+  border: none;
+}
+
+.announcements {
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}
+
+.announcements h4 {
+  font-size: 14px;
+  margin-bottom: 3px;
+  text-wrap: nowrap;
+}
+
+.announcements p {
+  font-size: 12px;
+  color: grey;
+  text-wrap: wrap;
+  margin-bottom: 20px;
+  text-overflow: ellipsis;
+}
+
+.trending-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin: 15px 0;
+}
+
+.trending-row .user-project {
+  display: grid;
+  align-content: center;
+  margin-left: 15px;
+}
+
+.user-project :first-child {
+  font-weight: bold;
+}
+
+.user-project :last-child {
+  color: gray;
+}
+
+.trending-row img {
+  border: 2px solid gray;
+}
+
