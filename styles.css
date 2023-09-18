@@ -34,6 +34,7 @@ main {
 }
 
 .sidebar {
+  padding: 10px;
   grid-column: 1 ;
   grid-row: 1 / 6;
   background-color: var(--main-blue);
@@ -47,12 +48,21 @@ main {
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-content: center;
+  padding-right: 20px;
 }
 
 .nav-rows.title {
   font-size: 24px;
   font-weight: bolder;
   grid-row: span 2;
+}
+
+.nav-rows.title img {
+  height: 35px;
+}
+
+.nav-rows.title p {
+  align-self: center;
 }
 
 .nav-rows img {
@@ -90,20 +100,20 @@ input {
   border-radius: 18px;
 }
 
-.top .profile-section {
+header .top .profile-section {
   display: flex;
   justify-content: right;
   margin: 0 50px;
   text-wrap: nowrap;
 }
 
-.top .profile-section img,
-.top .profile-section h3 {
+header .top .profile-section img,
+header .top .profile-section h3 {
   padding: 0 18px;
   align-self: center;
 }
 
-.bottom .profile-section {
+header .bottom .profile-section {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -133,10 +143,12 @@ img.main-profile-picture {
 
 h2,
 p {
+  text-wrap: nowrap;
   margin: 0;
+  margin-right: 20px;
 }
 
-.post-buttons {
+header .bottom .post-buttons {
   font-size: 16px;
   color: white;
   background-color: var(--main-blue);
@@ -144,9 +156,10 @@ p {
   height: 40px;
   margin: 10px;
   border: none;
+  min-width: 100px;
 }
 
-.buttons {
+header .bottom .buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
