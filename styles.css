@@ -184,6 +184,12 @@ header .bottom .buttons {
   gap: 30px;
 }
 
+.cards,
+.announcements-container,
+.trending-container {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .cards {
   background-color: white;
   border-radius: 10px;
@@ -220,10 +226,6 @@ header .bottom .buttons {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.announcement-section,
-.trending-section {
 }
 
 .announcements-container,
