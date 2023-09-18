@@ -11,9 +11,6 @@
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   box-sizing: border-box;
-}
-
-.container {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -43,6 +40,7 @@ main {
   display: grid;
   grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
 }
+
 
 .nav-rows  {
   color: white;
@@ -181,7 +179,7 @@ header .bottom .buttons {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
   gap: 30px;
 }
